@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <title>ГАУ ДПО РС(Я) "ИРПО"</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__item">
+                    <div class="logo">
+                        <div class="logo__bg">
+                            <img src="./img/logo-irpo.png" alt="" class="logo__img">
+                        </div>
+                        <div class="logo__text">
+                            <p class="logo__title">ГАУ ДПО РС(Я)</p>
+                            <p class="logo__title">"ИРПО"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__item">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Абитуриентам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Студентам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Педагогам</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Работодателям</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item">
+                    <div class="hamburger">
+                        <p class="hamburger__text">Меню</p>
+                        <a href="#" class="hamburger__list" id="openOverley">
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="preview">
+        <div class="container">
+            <div class="preview__inner">
+                <div class="preview__item">
+                    <div class="preview__bg">
+                        <img src="./img/—Pngtree—flat illustration of e learning_6569955.png" alt=""
+                            class="preview__img">
+                    </div>
+                </div>
+                <div class="preview__item">
+                    <h1 class="preview__title">Институт развития профессионального образования</h1>
+                    <p class="preview__subtitle">Мы разрабатываем курсы повышения квалификации и професcиональной
+                        преподготовки для педагогов среднего професcионального образования</p>
+                    <div class="preview__button">
+                        <a href="#" class="button">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h1 class="news__title">Ближайшие анонсы</h1>
+            <div class="news__inner">
+                <div class="news__nav">
+                    <div class="news__pager">
+                        <a data-slide-index="0">Конференция</a>
+                        <a data-slide-index="1">Хакатон</a>
+                        <a data-slide-index="2">Мероприятие</a>
+                        <a data-slide-index="3">Открытие мастерского</a>
+                    </div>
+                </div>
+                <div class="news__content">
+                    <ul class="news__list">
+                        <li>
+                            <div class="news__slide">
+                                <img src="./img/anons-1.jpg" alt="" class="news__img">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news__slide">
+                                <img src="./img/anons-2.jpg" alt="" class="news__img">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news__slide">
+                                <img src="./img/anons-3.jpg" alt="" class="news__img">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news__slide">
+                                <img src="./img/anons-4.jpg" alt="" class="news__img">
+                            </div>
+                        </li>
+                    </ul>
+                </div>           
+            </div>
+        </div>
+    </section>
+
+    <section class="programms">
+        <div class="container">
+            <div class="programms__inner">
+                <h1 class="programms__title">Основные направления</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="overley" id="overleyActive">
+        <div class="overley__close" id="overleyClose">
+            <a href="#" class="overley__close--text">Закрыть</a>
+        </div>
+        <ul class="menu menu--overlay">
+            <li class="menu__item menu__item--overlay">
+                <a href="#" class="menu__link menu__link--overlay">Абитуриентам</a>
+            </li>
+            <li class="menu__item menu__item--overlay">
+                <a href="#" class="menu__link menu__link--overlay">Студентам</a>
+            </li>
+            <li class="menu__item menu__item--overlay">
+                <a href="#" class="menu__link menu__link--overlay">Педагогам</a>
+            </li>
+            <li class="menu__item menu__item--overlay">
+                <a href="#" class="menu__link menu__link--overlay">Работодателям</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./script/overlay.js"></script>
+    <script src="./script/slider.js"></script>
+
+</body>
+
+</html>

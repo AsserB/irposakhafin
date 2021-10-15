@@ -1,0 +1,30 @@
+@mixin smallMonitor {
+    @media screen and (max-width: 1250px){
+      @content;
+    }
+      
+    }
+  
+  @mixin notebook {
+    @media screen and (max-width: 950px) {
+      @content;
+    }
+  }
+  
+  @mixin tablets {
+      @media screen and (max-width: 768px){
+        @content;
+      }
+    }
+    
+    @mixin phones {
+      @media screen and (max-width: 480px){
+        @content;
+      }
+    }
+    
+    @mixin oldphones {
+      @media screen and (max-width: 380px){
+        @content;
+      }
+    }

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url(../css/normalize.css);
+@import "header";
+@import "preview";
+@import "news";
+@import "programms";
+@import "overlay";
+@import "media";
+@import "button";
+
+
+
+$baseFontSize: 16px;
+
+html {
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 3px;
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 7px;
+    }
+
+    @include oldphones {
+        font-size: $baseFontSize - 8px;
+    }
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: $baseFontSize;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*---------smallMonitor------------*/
+/*----------HEADER----------*/
+
+/*-PREVIEW-*/
+.preview__inner{
+    @include smallMonitor{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.preview__item{
+    @include smallMonitor{
+        width: 70%;
+    }
+}
+.preview__bg{
+    @include smallMonitor{
+        border-left: 0 transparent;
+        border-bottom: 0 transparent;
+    }
+}
+.preview__img {
+    @include smallMonitor{
+        width: 50%;
+    }
+}
+/*---------tablets------------*/
+
+/*----------HEADER----------*/
+.header__item{
+    @include tablets{
+        &:last-child{
+            width: 50%;
+        }
+    }
+}
+.menu{
+    @include tablets{
+        display: none;
+    }
+}
+.hamburger{
+    @include tablets{
+        display: flex;
+        width: 95%;
+    }
+}
+
+/*-PREVIEW-*/
+
+.preview__inner{
+    @include tablets{
+        flex-direction: column;
+        height: 30rem;
+    }
+}
+.preview__item{
+    @include tablets{
+        width: 100%;
+    }
+}
+
+/*-NEWS-*/
+
+.news{
+    @include tablets{
+        
+    }
+}
+.news__nav{
+    @include tablets{
+        display: none;
+    }
+}
+
+/*-------------phone----------------------*/
+
+.news{
+    @include phones{
+       
+    }
+}
