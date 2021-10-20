@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./script/previewText.js"></script>
+    <script src="./script/map.js"></script>
 
     <title>ГАУ ДПО РС(Я) "ИРПО"</title>
 </head>
@@ -71,7 +75,8 @@
                 </div>
                 <div class="preview__item">
                     <h1 class="preview__title">Институт развития профессионального образования</h1>
-                    <p class="preview__subtitle">Мы разрабатываем курсы повышения квалификации и професcиональной
+                    <p class="preview__subtitle">Мы <span class="text-typed"></span> курсы повышения квалификации и
+                        професcиональной
                         преподготовки для педагогов среднего професcионального образования</p>
                     <div class="preview__button">
                         <a href="#" class="button">Записаться</a>
@@ -97,26 +102,35 @@
                     <ul class="news__list">
                         <li>
                             <div class="news__slide">
-                                <img src="./img/anons-1.jpg" alt="" class="news__img">
+                                <a
+                                    href="https://docs.google.com/forms/d/1Ah5Iq8OrkOW4V79Qp6pnf2qS81mDLxPoqrIaE4-hTS8/edit">
+                                    <img src="./img/anons5.jpg" alt="" class="news__img">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="news__slide">
-                                <img src="./img/anons-2.jpg" alt="" class="news__img">
+                                <a href="#">
+                                    <img src="./img/anons-2.jpg" alt="" class="news__img">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="news__slide">
-                                <img src="./img/anons-3.jpg" alt="" class="news__img">
+                                <a href="#">
+                                    <img src="./img/anons-3.jpg" alt="" class="news__img">
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="news__slide">
-                                <img src="./img/anons-4.jpg" alt="" class="news__img">
+                                <a href="#">
+                                    <img src="./img/anons-4.jpg" alt="" class="news__img">
+                                </a>
                             </div>
                         </li>
                     </ul>
-                </div>           
+                </div>
             </div>
         </div>
     </section>
@@ -125,9 +139,281 @@
         <div class="container">
             <div class="programms__inner">
                 <h1 class="programms__title">Основные направления</h1>
+                <div class="programms__list">
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-1.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="./pages/programms1.html" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Региональный проект молодые профессионалы</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Модернизация профессионального образования, в
+                                    том числе с помощью внедрения адаптивных, практико-ориентированных и
+                                    гибких образовательных программ.
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-2.png" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">World Skills Russia</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>WorldSkills Russia, миссия которого – повышение стандартов
+                                    подготовки
+                                    кадров.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-3.png" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Абилимпикс</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>обеспечение
+                                    эффективной профессиональной
+                                    ориентации и мотивации инвалидов и лиц с ограниченными возможностями здоровья (далее
+                                    – ОВЗ)
+                                    к получению профессионального образования.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-4.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">СуперКампус</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Планируется строительство современного
+                                    образовательно-производственного комплекса на территории поселка Кангалассы с
+                                    инфраструктурой и
+                                    материально-технической базой, соответствующей международным стандартам и передовым
+                                    технологиям.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-5.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Профессионалы Якутии</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Модернизация профессионального образования, в
+                                    том числе с помощью внедрения адаптивных, практико-ориентированных и
+                                    гибких образовательных программ.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-6.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Мастер года</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Демонстрация конкурсантом методической
+                                    компетентности и собственного опыта в вопросах подготовки обучающихся, основанных на
+                                    передовых технологиях и методиках практической подготовки, а также полученных
+                                    образовательных результатов.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-7.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Демонстрационный экзамен</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Аттестации
+                                    выпускников по программам среднего профессионального образования образовательных
+                                    организаций высшего и среднего профессионального образования
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-8.png" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">УМЦ по ГО и ЧС</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Повышение
+                                    квалификации должностных лиц и специалистов гражданской обороны и Якутской
+                                    территориальной
+                                    подсистемы
+                                    Единой государственной системы предупреждения и ликвидации чрезвычайных ситуаций.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-9.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Российский союз молодежи</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Объединение граждан и
+                                    общественных объединений для содействия всестороннему развитию молодого человека,
+                                    реализации
+                                    его потенциала в общественной сфере, защиты законных интересов и прав молодёжи.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-10.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Шаг в будущую профессию</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Проводится республиканский форум молодых исследователей «Шаг в
+                                    будущую профессию».
+                                    Форум является частью регионального этапа всероссийской научно-социальной программы
+                                    для
+                                    молодежи и школьников «Шаг в будущее».
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item" data-bug="Исправить">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-11.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">ВПР в СПО</h3>
+                                </div>
+                                <div class="item__text">
+                                    <b>Задача проекта:</b>Участниками ВПР станут студенты первых курсов, а также
+                                    студенты, завершившие в предыдущем
+                                    учебном году освоение общеобразовательных предметов.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="programms__item">
+                        <div class="item__header">
+                            <div class="item__img">
+                                <img src="./img/programms/programms-12.jpg" alt="" class="item__photo">
+                            </div>
+                        </div>
+                        <div class="item__body">
+                            <a href="#" class="item__content">
+                                <div class="item__title">
+                                    <h3 class="item__title--main">Образовательный журнал</h3>
+                                </div>
+                                <div class="item__text">
+                                    Информационно-аналитический, научно-методический, образовательный
+                                    журнал
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <h3 class="contacts__title">Контакты</h3>
+                <div class="contacts__adress">677018, Россия, Республика Саха (Якутия), г. Якутск, ул. Крупской, 13
+                </div>
+                <tel class="contacts__number">К.н.: 8 800 29 29 555</tel>
+                <div class="contacts__mail"> Email: <a href="#">irpo@mail.ru</a></div>
+                <div class="socials__icon">
+                    <div class="socials__item socials__item-icon-ins">
+                        <a href="#" class="socials__link">
+                        </a>
+                    </div>
+                    <div class="socials__item socials__item-icon-vk">
+                        <a href="#" class="socials__link">
+                        </a>
+                    </div>
+                    <div class="socials__item socials__item-icon-face">
+                        <a href="#" class="socials__link">
+                        </a>
+                    </div>
+                    <div class="socials__item socials__item-icon-yt">
+                        <a href="#" class="socials__link">
+                        </a>
+                    </div>
+                </div>
+                <div id="myMapId" style="width:33rem; height:25rem"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
 
 
 

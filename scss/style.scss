@@ -4,6 +4,7 @@
 @import "preview";
 @import "news";
 @import "programms";
+@import "contacts";
 @import "overlay";
 @import "media";
 @import "button";
@@ -146,6 +147,22 @@ ul li {
     @include tablets{
         display: none;
     }
+}
+
+/*-----PROGRAMMS-----*/
+
+.programms__list{
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+    }
+  
+}
+
+.programms__item{ 
+    @include tablets{
+        width: 100%;
+    }    
 }
 
 /*-------------phone----------------------*/

@@ -4,6 +4,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    margin: 0 0 2rem 0;
     .preview__inner{
         display: flex;
         align-items: center;
@@ -41,11 +42,17 @@
     width: 100%;
     padding: 2rem 0 0 2rem;
     font-size: 1.3rem;
-    text-align: center;
     color: #333;
+    overflow: hidden;
 }
 
 .preview__button{
     margin-top: 3rem;
     text-align: center;
+}
+
+.text-typed{
+    font-weight: bold;
+    color: #000081be;
+    text-transform: uppercase;
 }
